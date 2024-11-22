@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/boutonFavoris"
+        android:title="@string/favoris"
+        android:icon="@drawable/star_16dp"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/BouttonEdit"
+        android:title="@string/edit"
+        android:icon="@drawable/edit_note"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/bouttonSupprimer"
+        android:title="@string/delete"
+        android:icon="@drawable/delete_16dp"
+        app:showAsAction="ifRoom" />
+</menu>

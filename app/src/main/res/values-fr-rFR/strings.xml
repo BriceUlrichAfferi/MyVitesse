@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Vitesse</string>
+    <string name="no_candidate">Aucun Candidat</string>
+    <string name="no_candidate_query">Pas de candidat selon votre saisie</string>
+    <string name="add">ajouter</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="favorite">favorite</string>
+    <string name="search_a_candidate">Rechercher un Candidat</string>
+    <string name="candidate_image">Image Candidat</string>
+    <string name="icon_description">Description Icone</string>
+    <string name="name">Prénom</string>
+    <string name="surname">Nom</string>
+    <string name="first_name">Prénom</string>
+    <string name="last_name">Nom</string>
+    <string name="phone">Téléphone</string>
+    <string name="save">Sauvegarder</string>
+    <string name="note_here">Notes</string>
+    <string name="salary">Prétentions salariales</string>
+    <string name="jj_mm_aaaa">jj/mm/aaaa</string>
+    <string name="calendar_icon">Icone Calendrier</string>
+    <string name="enter_date">Entrez une date</string>
+    <string name="email">Email</string>
+    <string name="add_candidate">Ajouter un candidat</string>
+    <string name="call">Appel</string>
+    <string name="sms">SMS</string>
+    <string name="about">À propos</string>
+    <string name="birth_date">03/03/89 (34 ans)</string>
+    <string name="birthday">Anniversaire</string>
+    <string name="amount">3500 €</string>
+    <string name="conversion">Soit £ 3026,99</string>
+    <string name="no_favorites">Pas encore de favoris</string>
+    <string name="description_text">Text Description</string>
+    <string name="username_text">Identifiant</string>
+    <string name="favoris">Favoris</string>
+    <string name="edit">Modifier</string>
+    <string name="delete">Supprimer</string>
+    <string name="added_canidate_success">Candidat ajouté avec succès</string>
+    <string name="permission_access_files">Autorisation requise pour accéder aux fichiers</string>
+    <string name="sélect_date">Sélectionnez une date</string>
+    <string name="first_name_require">Prénom requis</string>
+    <string name="last_name_require">Nom requis</string>
+    <string name="salary_require">Prétentions salariales requises</string>
+    <string name="only_digit">Le champ ne doit contenir que des chiffres</string>
+    <string name="number_require">Numéro de téléphone requis</string>
+    <string name="phone_digit_limit">Numéro de téléphone invalide (10 chiffres requis)</string>
+    <string name="date_require">Date requise</string>
+    <string name="email_require">Email requis</string>
+    <string name="invalid_email">Email invalid</string>
+    <string name="currency_conversion">Conversion de devises en cours</string>
+    <string name="invalid_salary_input">Saisie de salaire non valide</string>
+    <string name="unavailable_phone_number">Numéro de téléphone non disponible</string>
+    <string name="unavailable_email">Aucune application de messagerie électronique trouvée dans l\'appareil</string>
+    <string name="unavailable_email_address">Adresse email non disponible</string>
+    <string name="confirm_deletion">Confirmer la suppression</string>
+    <string name="delete_alert_dialog">Etes-vous sûr de vouloir supprimer ce candidat ? \nCette action ne peut pas être annulée.</string>
+    <string name="cancel">Annuler</string>
+    <string name="years_old">ans</string>
+    <string name="all">Tous</string>
+    <string name="filtrer">Filtrer</string>
+    <string name="euros">€</string>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</resources>

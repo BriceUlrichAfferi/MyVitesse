@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/homePageFragment">
+    <fragment
+        android:id="@+id/addFragment"
+        android:name="com.example.vitesse.AddFragment"
+        android:label="Add Candidate">
+        <action
+            android:id="@+id/action_addFragment_to_homePageFragment"
+            app:destination="@id/homePageFragment" />
+    </fragment>
+
+
+
+
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="com.example.vitesse.detailsFragment"
+        android:label="fragment_details"
+        tools:layout="@layout/fragment_details">
+        <action
+            android:id="@+id/action_detailsFragment_to_homePageFragment"
+            app:destination="@id/homePageFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/editFragment"
+        android:name="com.example.vitesse.model.EditCandidateFragment"
+        android:label="fragment_details"
+        tools:layout="@layout/fragment_edit_candidate">
+        <action
+            android:id="@+id/action_editFragment_to_homePageFragment"
+            app:destination="@id/homePageFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/editPageFragment"
+        android:name="com.example.vitesse.model.EditCandidateFragment"
+        android:label="Home Page" />
+
+    <fragment
+        android:id="@+id/homePageFragment"
+        android:name="com.example.vitesse.HomePageFragment"
+        android:label="Home Page" />
+
+    <fragment
+        android:id="@+id/detailsFragment2"
+        android:name="com.example.vitesse.detailsFragment"
+        android:label="Home Page" />
+
+
+
+
+
+
+
+
+</navigation>

@@ -1,0 +1,15 @@
+<!-- res/values/styles.xml -->
+<resources>
+    <!-- Base application theme -->
+    <style name="CustomSearchView" parent="Widget.AppCompat.SearchView">
+        <item name="queryBackground">@android:color/transparent</item> <!-- Transparent background -->
+        <item name="searchIcon">@null</item> <!-- Remove the search icon -->
+        <item name="android:textColor">@android:color/black</item> <!-- Customize input text color -->
+    </style>
+
+    <style name="Divider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">2dp</item>
+        <item name="android:background">?android:attr/listDivider</item>
+    </style>
+</resources>
