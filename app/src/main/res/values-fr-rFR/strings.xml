@@ -22,6 +22,7 @@
     <string name="enter_date">Entrez une date</string>
     <string name="email">Email</string>
     <string name="add_candidate">Ajouter un candidat</string>
+    <string name="details_candidate">Info sur le Candidate</string>
     <string name="call">Appel</string>
     <string name="sms">SMS</string>
     <string name="about">À propos</string>
@@ -34,8 +35,11 @@
     <string name="username_text">Identifiant</string>
     <string name="favoris">Favoris</string>
     <string name="edit">Modifier</string>
+    <string name="editCandidate">Modifier un candidat</string>
     <string name="delete">Supprimer</string>
     <string name="added_canidate_success">Candidat ajouté avec succès</string>
+    <string name="error_saving_canidate">Erreur lors de l\'enregistrement du candidat</string>
+    <string name="all_field_vailidity">Tous les champs doivent être valides</string>
     <string name="permission_access_files">Autorisation requise pour accéder aux fichiers</string>
     <string name="sélect_date">Sélectionnez une date</string>
     <string name="first_name_require">Prénom requis</string>

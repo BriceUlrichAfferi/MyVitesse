@@ -2,11 +2,11 @@ package com.example.vitesse.di
 
 import android.app.Application
 import android.content.Context
-import com.example.vitesse.adapters.room.CandidateDtoDao
+import com.example.vitesse.room.CandidateDtoDao
 import com.example.vitesse.data.repository.LocalCandidatRepository
 import com.example.vitesse.data.repository.RemoteCandidatRepository
-import com.example.vitesse.data.service.CandidatApi
-import com.example.vitesse.data.service.CandidatsfakeApi
+import com.example.vitesse.data.service.fakeApi.CandidatApi
+import com.example.vitesse.data.service.fakeApi.CandidatsfakeApi
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -21,7 +21,7 @@ object AppModule {
     @Provides
     @Singleton
     fun provideCandidatApi(): CandidatApi {
-        return CandidatsfakeApi() // Provide your fake API
+        return CandidatsfakeApi() // Provide  fake API
     }
 
 

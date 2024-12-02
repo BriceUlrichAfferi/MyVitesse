@@ -11,7 +11,7 @@
         android:id="@+id/detailsToolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        app:title="@string/add_candidate"
+        app:title="@string/details_candidate"
         android:background="#EEE6F3"
         app:titleTextColor="@android:color/black"
         app:navigationIcon="@drawable/baseline_keyboard_backspace_24"

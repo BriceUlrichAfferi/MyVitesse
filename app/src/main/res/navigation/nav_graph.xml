@@ -5,19 +5,16 @@
     app:startDestination="@id/homePageFragment">
     <fragment
         android:id="@+id/addFragment"
-        android:name="com.example.vitesse.AddFragment"
+        android:name="com.example.vitesse.fragments.AddFragment"
         android:label="Add Candidate">
         <action
             android:id="@+id/action_addFragment_to_homePageFragment"
             app:destination="@id/homePageFragment" />
     </fragment>
 
-
-
-
     <fragment
         android:id="@+id/detailsFragment"
-        android:name="com.example.vitesse.detailsFragment"
+        android:name="com.example.vitesse.fragments.DetailsFragment"
         android:label="fragment_details"
         tools:layout="@layout/fragment_details">
         <action
@@ -27,7 +24,7 @@
 
     <fragment
         android:id="@+id/editFragment"
-        android:name="com.example.vitesse.model.EditCandidateFragment"
+        android:name="com.example.vitesse.fragments.EditCandidateFragment"
         android:label="fragment_details"
         tools:layout="@layout/fragment_edit_candidate">
         <action
@@ -35,27 +32,19 @@
             app:destination="@id/homePageFragment" />
     </fragment>
 
-
     <fragment
         android:id="@+id/editPageFragment"
-        android:name="com.example.vitesse.model.EditCandidateFragment"
+        android:name="com.example.vitesse.fragments.EditCandidateFragment"
         android:label="Home Page" />
 
     <fragment
         android:id="@+id/homePageFragment"
-        android:name="com.example.vitesse.HomePageFragment"
+        android:name="com.example.vitesse.fragments.HomePageFragment"
         android:label="Home Page" />
 
     <fragment
         android:id="@+id/detailsFragment2"
-        android:name="com.example.vitesse.detailsFragment"
+        android:name="com.example.vitesse.fragments.DetailsFragment"
         android:label="Home Page" />
-
-
-
-
-
-
-
 
 </navigation>

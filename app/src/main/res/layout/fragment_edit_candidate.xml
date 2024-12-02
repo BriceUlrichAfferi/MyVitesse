@@ -10,7 +10,7 @@
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        app:title="Ajouter un candidat"
+        app:title="@string/editCandidate"
         android:background="#EEE6F3"
         app:titleTextColor="@android:color/black"
         app:navigationIcon="@drawable/baseline_keyboard_backspace_24"

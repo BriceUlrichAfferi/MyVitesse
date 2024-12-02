@@ -1,7 +1,7 @@
 package com.example.vitesse.data.repository
 
 
-import com.example.vitesse.data.service.CandidatApi
+import com.example.vitesse.data.service.fakeApi.CandidatApi
 import com.example.vitesse.model.Candidate
 import javax.inject.Inject
 

@@ -36,13 +36,13 @@ class UpdateCandidateUseCaseTest {
         val candidateToUpdate = Candidate(
             id = 1,
             picture = "https://example.com/picture.jpg",
-            identifiant = "CAND123",
+            note = "CAND123",
             description = "Updated description",
             firstName = "John",
             lastName = "Doe",
             phone = "1234567890",
             email = "johndoe@example.com",
-            anivDate = "1990-01-01",
+            anivDat = "1990-01-01",
             isFavorite = true
         )
 
@@ -60,25 +60,25 @@ class UpdateCandidateUseCaseTest {
             Candidate(
                 id = 1,
                 picture = "https://example.com/picture1.jpg",
-                identifiant = "CAND123",
+                note = "CAND123",
                 description = "Software Engineer",
                 firstName = "John",
                 lastName = "Doe",
                 phone = "1234567890",
                 email = "johndoe@example.com",
-                anivDate = "1990-01-01",
+                anivDat = "1990-01-01",
                 isFavorite = true
             ),
             Candidate(
                 id = 2,
                 picture = "https://example.com/picture2.jpg",
-                identifiant = "CAND124",
+                note = "CAND124",
                 description = "Data Scientist",
                 firstName = "Alice",
                 lastName = "Smith",
                 phone = "1122334455",
                 email = "alice.smith@example.com",
-                anivDate = "1998-12-12",
+                anivDat = "1998-12-12",
                 isFavorite = false
             )
         )

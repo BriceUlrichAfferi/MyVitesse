@@ -40,13 +40,13 @@ class AddCandidateUseCaseTest {
         val candidateToAdd = Candidate(
             id = 0, // Assuming a new candidate
             picture = "https://example.com/picture.jpg",
-            identifiant = "CAND123",
+            note = "CAND123",
             description = "Experienced software developer",
             firstName = "John",
             lastName = "Doe",
             phone = "1234567890",
             email = "johndoe@example.com",
-            anivDate = "1990-01-01",
+            anivDat = "1990-01-01",
             isFavorite = true
         )
 
@@ -65,13 +65,13 @@ class AddCandidateUseCaseTest {
             Candidate(
                 id = 0,
                 picture = "https://example.com/picture2.jpg",
-                identifiant = "CAND125",
+                note = "CAND125",
                 description = "Intern",
                 firstName = "Alice",
                 lastName = "Smith",
                 phone = "1122334455",
                 email = "alice.smith@example.com",
-                anivDate = "1998-12-12",
+                anivDat = "1998-12-12",
                 isFavorite = false
             )
         )

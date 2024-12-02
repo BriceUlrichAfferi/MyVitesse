@@ -22,27 +22,9 @@ class RemoteCandidatViewModel @Inject constructor(
 
     fun fetchCandidats() {
         viewModelScope.launch {
-            try {
-                val candidats = remoteCandidatRepository.fetchCandidats()  // Fetch data from the API
-                Log.d("RemoteCandidatViewModel", "Fetched from Fake API: $candidats")
-                _remoteCandidats.value = candidats  // Update LiveData with fetched candidates
-            } catch (e: Exception) {
-                Log.e("RemoteCandidatViewModel", "Error fetching candidats: ${e.message}")
-            }
-        }
-    }
 
-
-    // Function to add a candidat to the API
-    // Function to add a candidat to the API through the repository
-    fun addCandidatToApi(candidate: Candidate) {
-        viewModelScope.launch {
-            try {
-                remoteCandidatRepository.addCandidat(candidate)// Call the repository method
-                Log.d("RemoteCandidatViewModel", "Candidat added to API: $candidate")
-            } catch (e: Exception) {
-                Log.e("RemoteCandidatViewModel", "Error adding candidat to API: ${e.message}")
-            }
+                val candidats = remoteCandidatRepository.fetchCandidats()
+                _remoteCandidats.value = candidats
         }
     }
 }

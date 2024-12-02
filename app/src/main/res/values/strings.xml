@@ -22,6 +22,7 @@
     <string name="enter_date">Enter a Date</string>
     <string name="email">Email</string>
     <string name="add_candidate">Add a Candidate</string>
+    <string name="details_candidate">Info on the Candidate</string>
     <string name="call">Call</string>
     <string name="sms">SMS</string>
     <string name="about">About</string>
@@ -33,9 +34,12 @@
     <string name="username_text">Username</string>
     <string name="favoris">Favorites</string>
     <string name="edit">Edit</string>
+    <string name="editCandidate">Edit a candidate</string>
     <string name="delete">Delete</string>
     <string name="no_favorites">No favorites yet</string>
     <string name="added_canidate_success">Candidate added successfully</string>
+    <string name="error_saving_canidate">Error saving candidate</string>
+    <string name="all_field_vailidity">All fields must be valid</string>
     <string name="permission_access_files">Permission required to access files</string>
     <string name="sélect_date">Select a date</string>
     <string name="first_name_require">First name required</string>
