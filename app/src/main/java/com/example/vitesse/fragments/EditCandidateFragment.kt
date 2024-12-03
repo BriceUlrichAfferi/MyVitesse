@@ -157,7 +157,7 @@ class EditCandidateFragment : Fragment() {
                 lifecycleScope.launch {
                     viewModel.performAction(CandidateAction.UpdateCandidate(updatedCandidat))
                     Toast.makeText(requireContext(), "Candidate updated", Toast.LENGTH_SHORT).show()
-                    findNavController().navigate(R.id.detailsFragment2)
+                    findNavController().navigate(R.id.homePageFragment)
                 }
             }
         }

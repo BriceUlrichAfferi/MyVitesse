@@ -81,10 +81,12 @@ class CandidatsFragment : Fragment(), FilterableCandidates {
                         }
                     }
 
-                    val combinedCandidatesList = combinedCandidatesSet.toList()
-                    combinedCandidats.clear() // Clear old data
-                    combinedCandidats.addAll(combinedCandidatesList) // Add new data
-
+                    // sort the list by first name and last name
+                    val combinedCandidatesList = combinedCandidatesSet.toList().sortedWith(
+                        compareBy({ it.firstName }, { it.lastName })
+                    )
+                    combinedCandidats.clear()
+                    combinedCandidats.addAll(combinedCandidatesList)
                     updateCandidateList(combinedCandidatesList, combinedCandidatesList.isNotEmpty())
                 }
             }

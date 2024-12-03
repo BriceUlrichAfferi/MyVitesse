@@ -10,8 +10,8 @@ import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.vitesse.R
-import com.example.vitesse.data.viewModel.SharedViewModel
 import com.example.vitesse.adapters.FavorisAdapter
+import com.example.vitesse.data.viewModel.SharedViewModel
 import com.example.vitesse.databinding.FragmentFavorisBinding
 import kotlinx.coroutines.launch
 
@@ -39,17 +39,20 @@ class FavorisFragment : Fragment() {
         // Observe the favorites list and update the adapter
         viewLifecycleOwner.lifecycleScope.launch {
             sharedViewModel.favorites.collect { favorites ->
-                if (favorites.isEmpty()) {
+                // Sort the favorites list alphabetically
+                val sortedFavorites = favorites.sortedWith(compareBy({ it.firstName }, { it.lastName }))
+
+                // Update the UI based on the sorted list
+                if (sortedFavorites.isEmpty()) {
                     binding.emptyView.visibility = View.VISIBLE
                     binding.recyclerView.visibility = View.GONE
                 } else {
                     binding.emptyView.visibility = View.GONE
                     binding.recyclerView.visibility = View.VISIBLE
-                    favorisAdapter.updateFavorites(favorites)
+                    favorisAdapter.updateFavorites(sortedFavorites)
                 }
             }
         }
-
     }
 
     private fun setupRecyclerView() {
@@ -61,13 +64,14 @@ class FavorisFragment : Fragment() {
 
                 // Navigate to DetailsFragment when an item is clicked
                 findNavController().navigate(R.id.detailsFragment)
-
-            })
+            }
+        )
         binding.recyclerView.apply {
             layoutManager = LinearLayoutManager(requireContext())
             adapter = favorisAdapter
         }
     }
+
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null

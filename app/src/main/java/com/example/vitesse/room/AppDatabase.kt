@@ -7,8 +7,8 @@ import androidx.room.Room
 import androidx.room.RoomDatabase
 import com.example.vitesse.entity.CandidateDto
 
-
-@Database(entities = [ CandidateDto::class], version = 7, exportSchema = false) // Increment the version
+                                                // Increment the version
+@Database(entities = [ CandidateDto::class], version = 7, exportSchema = false)
 abstract class AppDatabase : RoomDatabase() {
     //abstract fun candidatDao(): CandidatDao
     abstract fun candidateDtoDao(): CandidateDtoDao
