@@ -1,7 +1,9 @@
 package com.example.vitesse.fragments
 
 import android.app.DatePickerDialog
+import android.content.pm.PackageManager
 import android.net.Uri
+import android.os.Build
 import android.os.Bundle
 import android.util.Log
 import androidx.fragment.app.Fragment
@@ -98,14 +100,35 @@ class AddFragment : Fragment() {
     }
 
     private fun openFilePicker() {
-        if (ContextCompat.checkSelfPermission(requireContext(), android.Manifest.permission.READ_EXTERNAL_STORAGE)
-            == PermissionChecker.PERMISSION_GRANTED
+        val permission = when {
+            Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU -> {
+                android.Manifest.permission.READ_MEDIA_IMAGES
+            }
+            else -> {
+                android.Manifest.permission.READ_EXTERNAL_STORAGE
+            }
+        }
+
+        if (ContextCompat.checkSelfPermission(requireContext(), permission)
+            == PackageManager.PERMISSION_GRANTED
         ) {
-            pickFileLauncher.launch("*/*")
+            pickFileLauncher.launch("image/*")
         } else {
-            requestPermissionLauncher.launch(android.Manifest.permission.READ_EXTERNAL_STORAGE)
+            // Show rationale or request permission
+            if (shouldShowRequestPermissionRationale(permission)) {
+                Toast.makeText(
+                    requireContext(),
+                    "Permission is required to access the gallery.",
+                    Toast.LENGTH_LONG
+                ).show()
+            }
+            requestPermissionLauncher.launch(permission)
         }
     }
+
+
+
+
 
     private fun showDatePickerDialog() {
         val calendar = Calendar.getInstance()
